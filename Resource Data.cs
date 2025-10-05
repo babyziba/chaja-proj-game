@@ -1,47 +1,47 @@
 using UnityEngine;
 
-public class Resources
+public class Resourcelist
 {
-    public int Wood;
-    public int Stone;
-    private int gold;
+    public int wood;
+    public int stone;
+    public int gold;
 }
 public class ResourceData : MonoBehaviour
 {
-    public Resources resources = new Resources();
+    public Resourcelist resourcelist = new Resourcelist();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        resources.wood = 0;
-        resources.stone = 0;
-        resources.gold = 0;
+        resourcelist.wood = 0;
+        resourcelist.stone = 0;
+        resourcelist.gold = 0;
     }
 
-    public void GetWood()
+    public int GetWood()
     {
-        return wood;
+        return resourcelist.wood;
     }
     public void SetWood(int amountofwood)
     {
-        resources.wood += amountofwood;
+        resourcelist.wood += amountofwood;
     }
 
-    public void GetStone()
+    public int GetStone()
     {
-        return stone;
+        return resourcelist.stone;
     }
     public void SetStone(int amountofstone)
     {
-        resources.stone += amountofstone;
+        resourcelist.stone += amountofstone;
     }
 
-    public void GetGold()
+    public int GetGold()
     {
-        return gold;
+        return resourcelist.gold;
     }
     public void SetGold(int amountofgold)
     {
-        resources.wood += amountofgold;
+        resourcelist.wood += amountofgold;
     }
     // Update is called once per frame
     void Update()
