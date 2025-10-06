@@ -5,6 +5,10 @@ using UnityEngine.InputSystem;
 
 public class player : MonoBehaviour
 {
+
+
+    public int invState = 0; 
+
     public int A_ActionSlots = 0;
     public int B_ActionSlots = 0;
     public int A_GatherSlots = 0;
